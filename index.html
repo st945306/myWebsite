@@ -17,22 +17,26 @@
 	margin: auto;
 }
 
-#coding{
-	height: 750px;
+#topImg{
+	height: 720px;
+	width: 1920px;
 }
 
 </style>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 <!-- nav bar -->
 <nav class="navbar navbar-default navbar-fixed-top">
 	<div class="container-fluid">
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#">Home</a>
+			<a class="navbar-brand" href="#topCarousel">Home</a>
+		</div>
+		<div>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="#experience">Experience</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li><a href="#download">Download</a></li>
+			</ul>
 		</div>
 
 	</div>
@@ -40,32 +44,36 @@
 
 <!-- carousel -->
 <div id="topCarousel" class="carousel slide" data-ride="carousel">
-
 	<!-- slides -->
 	<div class="carousel-inner" role="listbox">
 		<div class="item active">
-			<img id="coding" src="pics/coding.png"/>
+			<img id="topImg" src="pics/travel-sm.JPG"/>
 			<div class="carousel-caption">
-				<h2>Love Coding</h2>
+				<h2>Traveling</h2>
+				<h4>July, 2013@Chamonix Glacier</h4>
 			</div>
 		</div>
 		<div class="item">
-			<img src="pics/hearthstone.png"/>
+			<img id="topImg" src="pics/coding-sm.png"/>
 			<div class="carousel-caption">
-				<h2>Reach legend rank in HearthStone</h2>
+				<h2>Programming</h2>
+				<h4><em>easyChat</em>, a chat room in Java</h4>
 			</div>
 		</div>
-
-
-
+		<div class="item">
+			<img id="topImg" src="pics/hearthstone-sm.png"/>
+			<div class="carousel-caption">
+				<h2>Playing</h2>
+				<h4>reached legend rank in HearthStone</h4>
+			</div>
+		</div>
 	</div>
-
 	<!-- indicator -->
 	<ol class="carousel-indicators">
     	<li data-target="#topCarousel" data-slide-to="0" class="active"></li>
     	<li data-target="#topCarousel" data-slide-to="1"></li>
+    	<li data-target="#topCarousel" data-slide-to="2"></li>
 	</ol>
-	
 	<!-- control -->
 	<a class="left carousel-control" href="#topCarousel" role="button" data-slide="prev">
     	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -75,18 +83,23 @@
     	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     	<span class="sr-only">Next</span>
 	</a>
-
 </div>
-
-
 
 <div class="container text-center">
 	<h1>Nicky Chao</h1>
-	<h3>Study computer science in National Taiwan University</h3>
+	<h3>Study computer science and information engineering in National Taiwan University</h3>
+
 </div>
 
-
-
+<div id="experience" class="container">
+	<h2>Experience</h2>
+</div>
+<div id="skills" class="container">
+	<h2>Skills</h2>
+</div>
+<div id="contact" class="container">
+	<h2>Contact</h2>
+</div>
 
 
 
