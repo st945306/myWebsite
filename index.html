@@ -18,7 +18,7 @@
 }
 
 .block{
-	padding: 80px 120px 400px 120px;
+	padding: 80px 120px 160px 120px;
 }
 
 #topImg{
@@ -28,10 +28,22 @@
 
 #mySelf{
 	text-align: left;
+	text-indent: 30px;
 	font-size: 20px;
 }
 
 #name{
+	font-style: italic;
+}
+
+
+
+#contact{
+	background-color: #2d2d30;
+	color: white;
+}
+
+#contact h3{
 	font-style: italic;
 }
 
@@ -125,6 +137,25 @@
 </div>
 <div id="contact" class="block container-fluid text-center">
 	<h2>Contact</h2>
+	<h3>Send an Email to Nicky</h3><br/>
+	<div class="row">
+		<div class="col-lg-4">
+			<input class="form-control" placeholder="Name" type="text">
+		</div>
+		<div class="col-lg-4">
+			<input class="form-control" placeholder="Email" type="email">
+		</div>
+	</div><br/>
+	<div class="row">
+		<div class="col-lg-8">
+			<textarea class="form-control" placeholder="Content" rows="10"></textarea>
+		</div>
+	</div><br/><br/>
+	<div clss="row">
+		<div class="col-lg-8">
+			<button class="btn btn-primary btn-lg pull-right">Send</button>
+		</div>
+	</div>
 </div>
 
 
