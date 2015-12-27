@@ -8,6 +8,10 @@
 	<script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 </head>
 <style>
+.default{
+	font-size: 20px;
+}
+
 .container {
 	padding: 80px 120px;
 }
@@ -19,6 +23,21 @@
 
 .block{
 	padding: 80px 120px 160px 120px;
+}
+
+.projectPic{
+	border: 15px solid transparent;
+	height: 80%;
+	width: 80%;
+}
+
+.projectPic:hover{
+	border-color: #f1f1f1;
+}
+
+
+.detail{
+	text-align: left;
 }
 
 #topImg{
@@ -36,7 +55,9 @@
 	font-style: italic;
 }
 
-
+#experience{
+	background-color: #eee;
+}
 
 #contact{
 	background-color: #2d2d30;
@@ -48,7 +69,7 @@
 }
 
 </style>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body class="default" data-spy="scroll" data-target=".navbar" data-offset="50">
 <!-- nav bar -->
 <nav class="navbar navbar-default navbar-fixed-top">
 	<div class="container-fluid">
@@ -128,13 +149,80 @@
 
 <div id="projects" class="block container-fluid text-center">
 	<h2>Projects</h2>
+	<div class="row">
+		<div class="col-lg-4">
+			<h3>SDN</h3>
+			<a href="#SDNDetail" data-toggle="collapse"><img class="projectPic img-circle" src="pics/SDN.png"></a>
+			<div id="SDNDetail" class="collapse detail">
+				<p>Try to detect compromised switch on software-defined network</p>
+			</div>
+		</div>
+		<div class="col-lg-4">
+			<h3>easyChat</h3>
+			<img class="projectPic img-circle" src="pics/SDN.png">
+
+		</div>
+		<div class="col-lg-4">
+			<h3>Robot balancing</h3>
+			<img class="projectPic img-circle" src="pics/SDN.png">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-4">
+			<h3>Lunch Decider</h3>
+			<img class="projectPic img-circle" src="pics/SDN.png">
+		</div>
+		<div class="col-lg-4">
+			<h3>Something</h3>
+			<img class="projectPic img-circle" src="pics/SDN.png">
+		</div>
+		<div class="col-lg-4">
+			<h3>Something</h3>
+			<img class="projectPic img-circle" src="pics/SDN.png">
+		</div>
+	</div>
 </div>
+
+
+
 <div id="experience" class="block container-fluid text-center">
 	<h2>Experience</h2>
+	<table class="table">
+		<tr>
+			<td>1994 - 2005</td>
+			<td>something I did</td>
+		</tr>
+		<tr>
+			<td>1994 - 2005</td>
+			<td>something I did</td>
+		</tr>
+		<tr>
+			<td>1994 - 2005</td>
+			<td>something I did</td>
+		</tr>
+	</table>
+
+	<div class="row">
+		<div class="col-lg-4">1994 - 2005</div>
+		<div class="col-lg-8">Something I did</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-4">1994 - 2005</div>
+		<div class="col-lg-8">Something I did</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-4">1994 - 2005</div>
+		<div class="col-lg-8">Something I did</div>
+	</div>
 </div>
+
+
+
 <div id="skills" class="block container-fluid text-center">
 	<h2>Skills</h2>
 </div>
+
+
 <div id="contact" class="block container-fluid text-center">
 	<h2>Contact</h2>
 	<h3>Send an Email to Nicky</h3><br/>
