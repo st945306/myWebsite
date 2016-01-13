@@ -18,13 +18,13 @@
 }
 
 .block{
-	padding: 80px 120px 160px 120px;
+	padding: 80px 120px 120px 120px;
 }
 
 .projectPic{
 	border: 15px solid transparent;
-	height: 80%;
-	width: 80%;
+	height: 400px;
+	width: 400px;
 }
 
 .projectPic:hover{
@@ -52,11 +52,16 @@
 	font-style: italic;
 }
 
+#projects h3{
+	font-weight: bold;
+}
+
 #experience{
 	background-color: #eee;
 }
 
 #contact{
+	padding-bottom: 50px;
 	background-color: #2d2d30;
 	color: white;
 }
@@ -79,7 +84,7 @@
 				<li><a href="#experience"><span class="glyphicon glyphicon-flag"></span>&nbsp;Experience</a></li>
 				<li><a href="#skills"><span class="glyphicon glyphicon-send"></span>&nbsp;Skills</a></li>
 				<li><a href="#contact"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Contact</a></li>
-				<li><a href="#download"><span class="glyphicon glyphicon-download"></span>&nbsp;Download</a></li>
+				<li><a href="download.html"><span class="glyphicon glyphicon-download"></span>&nbsp;Download</a></li>
 			</ul>
 		</div>
 
@@ -151,7 +156,8 @@
 			<h3>SDN</h3>
 			<a href="#SDNDetail" data-toggle="collapse"><img class="projectPic img-circle" src="pics/SDN.png"></a>
 			<div id="SDNDetail" class="collapse detail">
-				<p>Try to detect compromised switch on software-defined network</p>
+				<p>This is a project try to detect compromised switches on a software-defined network. We use mininet and
+					Ryu to do the experiment.</p>
 			</div>
 		</div>
 		<div class="col-lg-4">
@@ -224,21 +230,28 @@
 	<h2>Contact</h2>
 	<h3>Send an Email to Nicky</h3><br/>
 	<div class="row">
-		<div class="col-lg-4">
+		<div class="col-lg-3"></div>
+		<div class="col-lg-3">
 			<input class="form-control" placeholder="Name" type="text">
 		</div>
-		<div class="col-lg-4">
+		<div class="col-lg-3">
 			<input class="form-control" placeholder="Email" type="email">
 		</div>
 	</div><br/>
 	<div class="row">
-		<div class="col-lg-8">
+		<div class="col-lg-3"></div>
+		<div class="col-lg-6">
 			<textarea class="form-control" placeholder="Content" rows="10"></textarea>
 		</div>
 	</div><br/><br/>
 	<div clss="row">
-		<div class="col-lg-8">
+		<div class="col-lg-9">
 			<button class="btn btn-primary btn-lg pull-right">Send</button>
+		</div>
+	</div><br/><br/><br/><br/>
+	<div clss="row">
+		<div class="col-lg-12">
+			<h5>Website made by Nicky Chao</h5>
 		</div>
 	</div>
 </div>
