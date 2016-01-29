@@ -15,16 +15,35 @@ makeQuestion();
 function pick(id){
 //	alert("button " + id + " was clicked");
 	options[ans].style.backgroundColor = green;
-	if (id != ans)
+	options[ans].style.color = 'white';
+	if (id != ans) {
 		options[id].style.backgroundColor = red;
+		options[id].style.color = 'white';
+	}
 	setTimeout(makeQuestion, 1500);
 }
 
 function makeQuestion(){
-	question.innerHTML = book[0].en;
+	var q = Math.floor(Math.random() * vocaNum);
+	question.innerHTML = book[q].en;
+	ans = Math.floor(Math.random() * 4 + 1);
+
+	var used = [];
+	for (var i = 0; i < vocaNum; i++)
+		used[i] = 0;
+
+	var fIndex;
 	for (var i = 1; i <= 4; i++){
-		options[i].innerHTML = book[i].ch;
+		if (i == ans)
+			options[i].innerHTML = book[q].ch;
+		else {
+			fIndex = Math.floor(Math.random() * vocaNum);
+			while (fIndex == q || used[fIndex] == 1)
+				fIndex = Math.floor(Math.random() * vocaNum);
+			used[fIndex] = 1;
+			options[i].innerHTML = book[fIndex].ch;
+		}
 		options[i].style.backgroundColor = 'white';
+		options[i].style.color = 'black';
 	}
-	ans = 1;
 }
