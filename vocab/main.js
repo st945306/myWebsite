@@ -20,7 +20,7 @@ function pick(id){
 		options[id].style.backgroundColor = red;
 		options[id].style.color = 'white';
 	}
-	setTimeout(makeQuestion, 1500);
+	setTimeout(makeQuestion, 900);
 }
 
 function makeQuestion(){
@@ -43,7 +43,7 @@ function makeQuestion(){
 			used[fIndex] = 1;
 			options[i].innerHTML = book[fIndex].ch;
 		}
-		options[i].style.backgroundColor = 'white';
-		options[i].style.color = 'black';
+		options[i].style.backgroundColor = null;
+		options[i].style.color = null;
 	}
 }
