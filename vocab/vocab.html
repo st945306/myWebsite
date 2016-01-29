@@ -5,14 +5,29 @@
 	<meta charset="utf-8">
 	<script src="data.js"></script>
 	<style>
-	#option1, #option2, #option3, #option4{
+	body {
+		background-color: #2d2d30;
+	}
+
+	#question{
+		color: white;
+	}
+
+	button{
+		background-color: #428BCA;
+		color: white;
+		border: 0;
 		height: 50px;
 		width: 250px;
 		font-size: 20px;
 		margin: 10px;
-		border: 1px solid;
 		border-radius: 50px;
 		outline: none;
+		transition: all 0.3s ease 0s;
+	}
+
+	button:hover{
+		background-color: #3071A9;
 	}
 
 	button::-moz-focus-inner{
@@ -27,6 +42,7 @@
 	</style>
 </head>
 <body>
+	<br/><br/>
 	<div align="center" class="block" id="question"></div>
 	<br/><br/>
 	<div align="center" class="block"><button id="option1" onclick="pick(1)"></button></div>
